@@ -1,0 +1,18 @@
+services:
+
+  fstab-check:
+    container_name: fstab-check
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    security_opt:
+      - "apparmor=unconfined"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - '/:/host:ro,rslave'
+      - /var/run:/var/run:ro
+      - /var/log:/var/log:ro
+    stdin_open: true
+    tty: true

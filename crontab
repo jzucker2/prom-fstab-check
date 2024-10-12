@@ -1,0 +1,2 @@
+# Run every minute
+*/1 * * * * /app/run_fstab_check.sh && echo 'checked fstab!'
