@@ -1,0 +1,12 @@
+services:
+
+  fstab-check:
+    container_name: fstab-check
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    stdin_open: true
+    tty: true
