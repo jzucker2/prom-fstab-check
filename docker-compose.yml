@@ -10,9 +10,9 @@ services:
       - "apparmor=unconfined"
     extra_hosts:
       - "host.docker.internal:host-gateway"
-#    volumes:
-#      - '/:/host:ro,rslave'
-#      - /var/run:/var/run:ro
-#      - /var/log:/var/log:ro
+    volumes:
+      - '/:/host:ro,rslave'
+      - /var/run:/var/run:ro
+      - /var/log:/var/log:ro
     stdin_open: true
     tty: true
