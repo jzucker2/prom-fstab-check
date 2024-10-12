@@ -17,5 +17,5 @@ RUN cp /build/node-exporter-textfile-collector-scripts/fstab-check.sh .
 RUN mkdir output
 
 #CMD ["sh node-exporter-textfile-collector-scripts/fstab-check.sh | sponge /app/output"]
-#CMD ["sh", "node-exporter-textfile-collector-scripts/fstab-check.sh", "|", "sponge", "output"]
+#CMD ["sh", "node-exporter-textfile-collector-scripts/fstab-check.sh", "|", "sponge", "output/output.prom"]
 CMD ["sleep", "10000"]
