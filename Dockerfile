@@ -11,8 +11,7 @@ RUN set -x \
       supercronic  \
       shadow \
       git \
-      moreutils \
-    && useradd -m app
+      moreutils
 #USER app
 
 

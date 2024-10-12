@@ -7,3 +7,4 @@
 * https://github.com/aptible/supercronic
 * https://github.com/aptible/supercronic/pull/51/files
 * https://www.aptible.com/docs/how-to-guides/app-guides/use-cron-to-run-scheduled-tasks#overview
+* https://fly.io/docs/blueprints/supercronic/
